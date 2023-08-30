@@ -3,6 +3,14 @@ body {
     margin: 0;
     padding: 0;
   }
+
+  .fit-picture {
+    width: 200px;
+    height: auto;
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  }
   
   .container {
     font-size: large;
@@ -77,6 +85,52 @@ body {
   .btn:hover {
     background-color: #0056b3;
   }
+
+.container {
+  margin-top: 40px;
+}
+
+.catalog {
+  margin-top: 40px;
+}
+
+.catalog h2 {
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+.book-container {
+  display: flex;
+  overflow-x: scroll;
+  padding: 10px 0;
+  gap: 20px;
+}
+
+.book {
+  flex: 0 0 auto;
+  max-width: 200px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  overflow: hidden;
+  transition: transform 0.3s;
+}
+
+.book img {
+  max-width: 100%;
+  height: auto;
+}
+
+.book p {
+  padding: 10px;
+  text-align: center;
+  font-size: 16px;
+  background-color: #fff;
+}
+
+.book:hover {
+  transform: translateY(-5px);
+}
+
   
   .footer {
     background-color: #f4f4f4;
