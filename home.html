@@ -1,38 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- Other head elements -->
-
-  <!-- Add a link to your CSS file -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-
-  <title>ShelfShare - Home</title>
+  <link rel="stylesheet" href="styles.css">
+  <title>ShelfShare - Book Rental</title>
+  <link rel="icon" type="image/x-icon" href="logo.png">
 </head>
 <body>
-  <!-- Header and navigation -->
+  <header class="header">
+    <nav class="navbar">
+      <div class="container">
+        
+        <img class="fit-picture" src="shelfshare.png" alt="ShelfShare">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="#">Home  </a></li>
+          <li class="nav-item"><a href="rentabook.html">Rent a Book  </a></li>
+          <li class="nav-item"><a href="#">My Desk  </a></li>
+          <li class="nav-item"><a href="contact.html">Contact Us</a></li>
+          <li class="nav-item"><a href="profile.html">Profile  </a></li>    
+        </ul>
 
+      </div>
+    </nav>
+    <div class="container">
+      <div class="hero">
+        <h1 class="hero-title">Explore and Share Amazing Books</h1>
+        <p class="hero-text">Join ShelfShare and embark on a journey through the world of literature.</p>
+        <a href="login.html" class="btn btn-primary">Get Started</a>
+      </div>
+    </div>
+  </header>
+  
   <main class="container">
-    <!-- Hero section -->
-
-    <!-- Horizontal scrolling catalog section -->
     <section class="catalog">
       <h2>Frequently Rented Books</h2>
       <div class="book-container">
         <div class="book">
-          <img src="book1.jpg" alt="Book 1">
-          <p>Book Title 1</p>
+          <img src="book1.jpeg" alt="Book 1">
+          <p>EINSTEIN - Walter Issacson</p>
         </div>
         <div class="book">
-          <img src="book2.jpg" alt="Book 2">
-          <p>Book Title 2</p>
+          <img src="book2.jpeg" alt="Book 2">
+          <p>Dust On The Mountain - Ruskin Bond</p>
         </div>
-        <!-- Add more book items here -->
+        <div class="book">
+          <img src="book3.jpeg" alt="Book 3">
+          <p>The Great Gatsby - F. Scott Fizgerald</p>
+        </div>
+        <div class="book">
+          <img src="book4.jpg" alt="Book 4">
+          <p>Wings Of Fire - A.P.J. Abdul Kalam</p>
+        </div>
+        <div class="book">
+          <img src="book5.jpeg" alt="Book 5">
+          <p>Doglapan - Ashneer Grover</p>
+        </div>
+        
       </div>
     </section>
   </main>
 
-  <!-- Footer and scripts -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2023 ShelfShare. All rights reserved.</p>
+      <p class="container"> Team </p>
+      <h1 class="credits"> Abhishek Thormothe - 169<br> Aadit Suryawanshi - 165<br>Shravani Thokade - 168</h1>
+      <img class="fit-picture1" src="shelfshare1.png" alt="ShelfShare">
+
+    </div>
+  </footer>
 </body>
 </html>
