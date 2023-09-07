@@ -20,7 +20,7 @@ body {
   }
   
   .header {
-    background-image: url(./images/bg.jpg);
+    background-image: url(bg.jpg);
     color: #fff;
   }
   
@@ -148,3 +148,5 @@ body {
     text-align: center;
     font-size: medium;
   }
+
+  
