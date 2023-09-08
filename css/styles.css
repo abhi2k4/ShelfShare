@@ -60,6 +60,14 @@ body, h1, h2, h3, p, ul {
   height: 40px;
   border-radius: 50%;
   border: 2px solid #fff;
+  
+}
+
+.user-profile p{
+  color: #b53f0c;
+  font-family:'Play', sans-serif;
+  font-size: 30px;
+
 }
 
 /* .............. */
