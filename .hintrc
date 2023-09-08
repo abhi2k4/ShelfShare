@@ -9,7 +9,8 @@
         "ignore": [
           "backdrop-filter",
           "accent-color",
-          "height: fit-content"
+          "height: fit-content",
+          "text-align-last"
         ]
       }
     ]

@@ -1,12 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Lobster&family=Lora:ital,wght@1,500&family=Play&family=Rajdhani:wght@300;700&display=swap');
+
 body {
     font-family: monospace, sans-serif;
     margin: 0;
     padding: 0;
   }
 
+/* Reset some default styles for better alignment */
+body, h1, h2, h3, p, ul {
+  margin: 0;
+  padding: 0;
+}
+
+/* Style the taskbar */
+.taskbar {
+  background-color: #8D7B68;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  color: hsl(0, 4%, 5%);
+}
+
+/* Style the logo */
+.logo img {
+  width: auto;
+  height: 50px;
+  margin-right: 20px;
+}
+
+/* Style the navigation links */
+.navigation ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.navigation li {
+
+  align-content: end;
+  font-size: 20px;
+  font-family: 'Acme', sans-serif;
+  /*font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;*/
+}
+
+.navigation a {
+  text-decoration: none;
+  color: #fff;
+  transition: color 0.3s;
+}
+
+.navigation a:hover {
+  color: #0056b3;
+}
+
+/* Style the user profile photo */
+.user-profile img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+}
+
+/* .............. */
   .fit-picture {
-    width: 200px;
-    height: auto;
+    width: auto;
+    height: 10%;
     display: block;
   margin-left: auto;
   margin-right: auto;
@@ -19,7 +78,7 @@ body {
     padding: 0 20px;
   }
   
-  .header {
+  .header1 {
     background-image: url(bg.jpg);
     color: #fff;
   }
@@ -63,19 +122,24 @@ body {
   }
   
   .hero-title {
+    font-family: 'Lora', serif;
+    font-weight:700;
     font-size: 36px;
     margin-bottom: 20px;
   }
   
   .hero-text {
+    font-family: 'Lora', serif;
+    font-weight:300;
     font-size: 18px;
     margin-bottom: 30px;
   }
   
   .btn {
+    font-family: 'Play', sans-serif;
     display: inline-block;
     padding: 12px 24px;
-    background-color: #007BFF;
+    background-color: #b53f0c;
     color: #fff;
     text-decoration: none;
     border-radius: 5px;
@@ -83,7 +147,7 @@ body {
   }
   
   .btn:hover {
-    background-color: #0056b3;
+    background-color: #e96421;
   }
 
 .container {
@@ -95,6 +159,8 @@ body {
 }
 
 .catalog h2 {
+  font-family:'Acme', sans-serif;
+  font-weight: 100;
   font-size: 24px;
   margin-bottom: 15px;
 }
@@ -107,6 +173,7 @@ body {
 }
 
 .book {
+  font-family: 'Acme', sans-serif;
   flex: 0 0 auto;
   max-width: 200px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
