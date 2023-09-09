@@ -6,13 +6,13 @@ body {
     padding: 0;
   }
 
-/* Reset some default styles for better alignment */
+
 body, h1, h2, h3, p, ul {
   margin: 0;
   padding: 0;
 }
 
-/* Style the taskbar */
+
 .taskbar {
   background-color: #8D7B68;
   display: flex;
@@ -22,14 +22,12 @@ body, h1, h2, h3, p, ul {
   color: hsl(0, 4%, 5%);
 }
 
-/* Style the logo */
 .logo img {
   width: auto;
   height: 50px;
   margin-right: 20px;
 }
 
-/* Style the navigation links */
 .navigation ul {
   list-style: none;
   display: flex;
@@ -41,7 +39,7 @@ body, h1, h2, h3, p, ul {
   align-content: end;
   font-size: 20px;
   font-family: 'Acme', sans-serif;
-  /*font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;*/
+ 
 }
 
 .navigation a {
@@ -54,7 +52,6 @@ body, h1, h2, h3, p, ul {
   color: #0056b3;
 }
 
-/* Style the user profile photo */
 .user-profile img {
   width: 40px;
   height: 40px;
