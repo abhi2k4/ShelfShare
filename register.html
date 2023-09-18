@@ -14,20 +14,124 @@
             <div class="input-box">
                 <input type="text" placeholder="Username" required>
             </div>
+            
             <div class="input-box">
-                <input type="password" placeholder="Create Password" required>
+               
+                <input type="password" id="password" name="password" placeholder="Create Password" required>
+                <div id="password-feedback"></div>
             </div>
             <div class="input-box">
-                <input type="password" placeholder="Confirm Password" required>
+                <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirm Password" required>
+                <div id="password-error"></div>
             </div>
             <div class="remember-forgot">
             </div>
-            <button type="submit" onclick="window.location.href = 'home.html'" class="btn" >Register</button>
+            <button type="submit" id="submit-button"  class="btn" >Register</button>
 
             <div class="register-link">
                 <p>Already have an account?<a href="login.html"> Login</a></p>
             </div>
         </form>
     </div>
+    <script>
+        // JavaScript code for password validation
+    
+        function validatePassword(password) {
+            // Define the criteria for a strong password
+            const minLength = 8;
+            const hasUpperCase = /[A-Z]/.test(password);
+            const hasLowerCase = /[a-z]/.test(password);
+            const hasNumbers = /\d/.test(password);
+            const hasSpecialChars = /[!@#$%^&*()_+{}\[\]:;<>,.?~\\-]/.test(password);
+    
+            // Check the password against the criteria
+            if (password.length < minLength) {
+                return '> Password must be at least ' + minLength + ' characters long. <';
+            }
+    
+            if (!hasUpperCase) {
+                return '> Password must contain at least one uppercase letter. <';
+            }
+    
+            if (!hasLowerCase) {
+                return '> Password must contain at least one lowercase letter. <';
+            }
+    
+            if (!hasNumbers) {
+                return '> Password must contain at least one number. <';
+            }
+    
+            if (!hasSpecialChars) {
+                return '> Password must contain at least one special character. <';
+            }
+    
+            // If all criteria are met, the password is valid
+            return '> Password is valid. <';
+        }
+    
+        // Add an event listener to the password input
+        const passwordInput = document.getElementById('password');
+        const passwordFeedback = document.getElementById('password-feedback');
+        const confirmPasswordInput = document.getElementById('confirm-password');
+        const passwordError = document.getElementById('password-error');
+
+    
+        passwordInput.addEventListener('input', function () {
+            const password = this.value;
+            const validationMessage = validatePassword(password);
+    
+            // Display the validation message
+            passwordFeedback.textContent = validationMessage;
+
+            function checkPasswordMatch() {
+            const password = passwordInput.value;
+            const confirmPassword = confirmPasswordInput.value;
+
+            if (password === confirmPassword) {
+                passwordError.textContent = ''; // Passwords match, clear error message
+                return true;
+            } else {
+                passwordError.textContent = 'Passwords do not match';
+                return false;
+            }
+}
+
+        });
+        
+
+            // Function to check if the passwords match
+            function checkPasswordMatch() {
+                const password = passwordInput.value;
+                const confirmPassword = confirmPasswordInput.value;
+
+                if (password === confirmPassword) {
+                    passwordError.textContent = ''; // Passwords match, clear error message
+                    return true;
+                } else {
+                    passwordError.textContent = 'Passwords do not match';
+                    return false;
+                }
+            }
+
+            // Add an event listener to the confirm password field
+            confirmPasswordInput.addEventListener('input', checkPasswordMatch);
+
+            // Function to handle form submission
+            function handleFormSubmit(event) {
+                event.preventDefault(); // Prevent the form from submitting normally
+                
+                if (checkPasswordMatch()) {
+                    // Passwords match, you can perform further actions here
+                    // For now, simulate a redirect to the landing page
+                    window.location.href = 'home.html';
+                } else {
+                    // Passwords do not match, do not proceed with submission
+                }
+            }
+
+            // Add an event listener to the submit button
+            submitButton.addEventListener('click', handleFormSubmit);
+    </script>
+    
 </body>
 </html>

@@ -86,7 +86,7 @@ margin-right: 3px;
     border-radius: 40px;
     box-shadow: 0 0 10px rgba(0, 0, 0, .1);
     cursor: pointer;
-    color: #333;
+    color: #ffffff;
     font-weight: 700;
 }
 .wrapper .register-link{
@@ -104,3 +104,4 @@ margin-right: 3px;
     text-decoration: underline;
     color: blue;
 }
+

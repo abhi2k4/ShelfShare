@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Lobster&family=Lora:ital,wght@1,500&family=Play&family=Rajdhani:wght@300;700&display=swap');
 
 *{
     margin: 0;
@@ -28,6 +29,7 @@ body{
     border-color: hsl(22, 93%, 48%);
 } 
 .wrapper h1{
+    border-color: orangered;
     font-size: 36px;
     text-align: center;
 }
@@ -80,7 +82,7 @@ margin-right: 3px;
     border-radius: 40px;
     box-shadow: 0 0 10px rgba(0, 0, 0, .1);
     cursor: pointer;
-    color: #333;
+    color: #ffffff;
     font-weight: 700;
 }
 .wrapper .register-link{
@@ -97,4 +99,25 @@ margin-right: 3px;
 .register-link p a:hover{
     text-decoration: underline;
     color: blue;
+}
+
+#password-feedback {
+    border-radius: 10px;
+    text-align: center;
+    color: red; 
+    font-family:'Play', sans-serif;
+    font-size: 14px;
+    /*margin-top: 5px;*/
+    background-size: contain  ;
+    
+}
+
+#password-error {
+    border-radius: 10px;
+    text-align: center;
+    color: red; 
+    font-family:'Play', sans-serif;
+    font-size: 14px;
+    margin-top: 5px;
+    background-size: 17px auto;
 }
