@@ -121,3 +121,13 @@ margin-right: 3px;
     margin-top: 5px;
     background-size: 17px auto;
 }
+
+#username-error {
+    border-radius: 10px;
+    text-align: center;
+    color: red; 
+    font-family:'Play', sans-serif;
+    font-size: 14px;
+    /*margin-top: 5px;*/
+    background-size: contain  ;
+}
