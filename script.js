@@ -12,5 +12,3 @@ bookForm.addEventListener('submit', function (event) {
 
   bookForm.reset();
 });
-
-

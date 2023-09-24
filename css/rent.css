@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Lobster&family=Lora:ital,wght@1,500&family=Play&family=Rajdhani:wght@300;700&display=swap');
+
 /* Reset some default styles */
 body, h1, h2, p, label, input, button {
     margin: 0;
@@ -11,11 +13,66 @@ body, h1, h2, p, label, input, button {
   }
   
   /* Style the header */
-  .header {
-    background-color: #f5f2f2;
-    color: #fff;
-    padding: 10px 0;
+  .taskbar {
+    background-color: #8D7B68;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    color: hsl(0, 4%, 5%);
   }
+  
+  .logo img {
+    width: auto;
+    height: 50px;
+    margin-right: 20px;
+  }
+  
+  .navigation ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .navigation li {
+  
+    align-content: end;
+    font-size: 20px;
+    font-family: 'Acme', sans-serif;
+   
+  }
+  
+  .nav-item a{
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s;
+  }
+  
+  .navigation a:hover {
+    color: #0056b3;
+  }
+  
+  .user-profile img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    
+  }
+  
+  .user-profile p{
+    color: #b53f0c;
+    font-family:'Play', sans-serif;
+    font-size: 30px;
+  
+  }
+  
+  .nav-act a{
+    color: #f67301;
+  }
+
+  /*-----------*/
   
   .containers {
     max-width: 960px;
@@ -31,7 +88,7 @@ body, h1, h2, p, label, input, button {
   main {
     background-color: #fff;
     padding: 20px;
-    margin-top: 20px;
+    margin-top: 0px;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   }
@@ -84,21 +141,41 @@ body {
   main {
     background-color: rgba(255, 255, 255, 0.8); /* Add a semi-transparent white background */
     padding: 20px;
-    margin-top: 20px;
+    margin-top: 50px;
+    margin-bottom: 50px;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     max-width: 960px;
-    margin: 0 auto;
+    margin-left: auto ;
+    margin-right: auto;
   }
   
-  /* ... (your other styles) ... */
-    
-  /* Style the footer */
+  .container {
+    font-size: large;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+   
+  }
   .footer {
-    background-color: #333;
-    color: #fff;
+    
+    margin-top: 20px;
+    background-color: #f4f4f4;
+    padding: 20px 0;
     text-align: center;
-    padding: 10px 0;
+  }
+  .credits {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    font-size: medium;
+  }
+  .container {
+    margin-top: 40px;
+  }
+  
+  .fit-picture1 {
+    width: 250px;
+    height: auto;
   }
   
   /* Responsive styles */
@@ -112,3 +189,62 @@ body {
     }
   }
   
+  /*----------------*/
+.taskbar {
+  background-color: #8D7B68;
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  color: hsl(0, 4%, 5%);
+}
+
+.logo img {
+  width: auto;
+  height: 50px;
+  margin-right: 20px;
+}
+
+.navigation ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.navigation li {
+
+  align-content: end;
+  font-size: 20px;
+  font-family: 'Acme', sans-serif;
+ 
+}
+
+.nav-item a{
+  text-decoration: none;
+  color: #fff;
+  transition: color 0.3s;
+}
+
+.navigation a:hover {
+  color: #0056b3;
+}
+
+.user-profile img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  
+}
+
+.user-profile p{
+  color: #b53f0c;
+  font-family:'Play', sans-serif;
+  font-size: 30px;
+
+}
+
+.nav-act a{
+  color: #f67301;
+}
