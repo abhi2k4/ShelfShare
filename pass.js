@@ -18,6 +18,22 @@ function checkUsernameValidity() {
     }
 }
 
+const emailInput = document.getElementById('email');
+const emailError = document.getElementById('email-error');
+
+const emailPattern = /^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.["com"]{2,}$/;
+
+function checkEmailValidity() {
+    const email = emailInput.value;
+    
+    if (emailPattern.test(email)) {
+        emailError.textContent = ''; 
+        return true;
+    } else {
+        emailError.textContent = 'Invalid Email';
+        return false;
+    }
+}
 
 function validatePassword(password) {
 
@@ -47,10 +63,29 @@ function validatePassword(password) {
         return ' Password must contain at least one special character. ';
     }
 
-    return ' Password is valid. ';
+    return '  ';
 }
 
+/*toggleButton.addEventListener('click', () => {
+    togglePasswordVisibility();
+})
+
+function togglePasswordVisibility() {
+    if (passwordInput.type === 'password') {
+        passwordInput.type = 'text';
+        passwordIcon.classList.remove('far', 'fa-eye');
+        passwordIcon.classList.add('far', 'fa-eye-slash'); // Show the eye-slash icon
+    } else {
+        passwordInput.type = 'password';
+        passwordIcon.classList.remove('far', 'fa-eye-slash');
+        passwordIcon.classList.add('far', 'fa-eye'); // Show the eye icon
+    }
+}*/
+
+
 const passwordInput = document.getElementById('password');
+/*const toggleButton = document.getElementById('togglePassword');
+const passwordIcon = document.getElementById('passwordIcon');*/
 const passwordFeedback = document.getElementById('password-feedback');
 const confirmPasswordInput = document.getElementById('confirm-password');
 const passwordError = document.getElementById('password-error');
@@ -79,11 +114,13 @@ confirmPasswordInput.addEventListener('input', checkPasswordMatch);
 
 usernameInput.addEventListener('input', checkUsernameValidity);
 
+emailInput.addEventListener('input', checkEmailValidity);
+
 
 function handleFormSubmit(event) {
     event.preventDefault(); 
     
-    if (checkPasswordMatch() && checkUsernameValidity()) {
+    if (checkPasswordMatch() && checkUsernameValidity() && checkEmailValidity() ) {
         window.location.href = 'home.html';
     } else {
        
@@ -91,3 +128,13 @@ function handleFormSubmit(event) {
 }
 
 submitButton.addEventListener('click', handleFormSubmit);
+
+const inputIcon = document.querySelector(".input__icon");
+const inputPassword = document.querySelector(".password");
+const inputCpassword = document.querySelector(".cpassword");
+
+inputIcon.addEventListener("click", () => {
+  inputIcon.classList.toggle("ri-eye-off-line");
+  inputIcon.classList.toggle("ri-eye-line");
+  inputPassword.type = inputPassword.type === "password" ? "text" : "password";
+});
