@@ -1,0 +1,47 @@
+Fiction:
+
+"To Kill a Mockingbird" by Harper Lee
+"1984" by George Orwell
+"Pride and Prejudice" by Jane Austen
+"The Great Gatsby" by F. Scott Fitzgerald
+"The Catcher in the Rye" by J.D. Salinger
+
+Science Fiction:
+
+"Dune" by Frank Herbert
+"Neuromancer" by William Gibson
+"Ender's Game" by Orson Scott Card
+"Foundation" by Isaac Asimov
+"Brave New World" by Aldous Huxley
+
+Fantasy:
+
+"The Lord of the Rings" by J.R.R. Tolkien
+"Harry Potter and the Sorcerer's Stone" by J.K. Rowling
+"A Song of Ice and Fire" series by George R.R. Martin
+"The Hobbit" by J.R.R. Tolkien
+"The Name of the Wind" by Patrick Rothfuss
+
+Mystery/Thriller:
+
+"The Girl with the Dragon Tattoo" by Stieg Larsson
+"Gone Girl" by Gillian Flynn
+"The Da Vinci Code" by Dan Brown
+"The Silent Patient" by Alex Michaelides
+"The Girl on the Train" by Paula Hawkins
+
+Romance:
+
+"Outlander" by Diana Gabaldon
+"The Notebook" by Nicholas Sparks
+"Pride and Prejudice" by Jane Austen
+"Me Before You" by Jojo Moyes
+"The Rosie Project" by Graeme Simsion
+
+Non-Fiction:
+
+"Sapiens: A Brief History of Humankind" by Yuval Noah Harari
+"Becoming" by Michelle Obama
+"Educated" by Tara Westover
+"The Immortal Life of Henrietta Lacks" by Rebecca Skloot
+"Thinking, Fast and Slow" by Daniel Kahneman

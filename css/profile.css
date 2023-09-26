@@ -4,7 +4,7 @@
 body {
   font-family: monospace, sans-serif;
   background-image: url('pfbg.jpg');
-  background-size:100%;
+  background-size:cover;
   background-repeat: no-repeat;
   font-family: Arial, sans-serif;
   margin-bottom: auto;
@@ -81,4 +81,17 @@ body {
 .fit-picture1 {
   width: 250px;
   height: auto;
+}
+
+.home-icon {
+  position: absolute;
+  top: 10px; 
+  left: 10px; 
+  font-size: 24px;
+  color: #ebebeb;
+  cursor: pointer; 
+}
+
+.home-icon:hover{
+  color: orange;
 }
