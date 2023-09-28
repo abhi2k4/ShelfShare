@@ -91,6 +91,7 @@ header h1 {
 .genre-filter {
     text-align: center;
     margin: 20px 0;
+    font-family: 'Acme', sans-serif;
 }
 
 .genre-filter label {
@@ -102,6 +103,7 @@ header h1 {
     font-size: 16px;
     border: 1px solid #ccc;
     border-radius: 5px;
+    font-family: 'Acme', sans-serif;  
 }
 
 /* Book List styles */

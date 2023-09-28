@@ -30,9 +30,9 @@ body, h1, h2, h3, p, ul {
 }
 
 .navigation ul {
-  list-style: none;
+  list-style:none;
   display: flex;
-  gap: 20px;
+  gap: 40px;
 }
 
 .navigation li {
@@ -176,6 +176,8 @@ body, h1, h2, h3, p, ul {
   overflow-x: scroll;
   padding: 10px 0;
   gap: 20px;
+  align-self: center;
+  margin-inline-start: auto;
 }
 
 .book {
