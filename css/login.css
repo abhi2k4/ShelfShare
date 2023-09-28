@@ -104,3 +104,18 @@ margin-right: 3px;
     text-decoration: underline;
     color: blue;
 }
+
+.input__icon-wrapper {
+    position: absolute;
+    top: 50%;
+    right: 12px;
+    transform: translateY(-50%);
+    cursor: pointer;
+  }
+  .input__icon {
+    color: #999;
+    font-size: 24px;
+  }
+  .input__icon:hover {
+    color: #333;
+  }
