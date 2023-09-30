@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Acme&family=Lobster&family=Lora:ital,wght@1,500&family=Play&family=Rajdhani:wght@300;700&display=swap');
+
+  @import url('https://fonts.googleapis.com/css2?family=Acme&family=Croissant+One&family=Lobster&family=Lora:ital,wght@1,500&family=Play&family=Rajdhani:wght@300;700&display=swap');
 
 body {
     font-family: monospace, sans-serif;
@@ -14,7 +15,10 @@ body, h1, h2, h3, p, ul {
 
 
 .taskbar {
-  background-color: #8D7B68;
+  background: #1D4350;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #A43931, #1D4350);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #A43931, #1D4350); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  
   height: fit-content;
   display: flex;
   align-items: center;
@@ -75,9 +79,11 @@ body, h1, h2, h3, p, ul {
     display: block;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: -20px;
   }
   
   .container {
+
     font-size: large;
     max-width: 1200px;
     margin: 0 auto;
@@ -85,7 +91,8 @@ body, h1, h2, h3, p, ul {
   }
   
   .header1 {
-    background-image: url(bg.jpg);
+    background-image: linear-gradient( 135deg, #F05F57 10%, #360940 100%);
+    background-image: url(back1.png);
     color: #fff;
   }
   
@@ -125,19 +132,22 @@ body, h1, h2, h3, p, ul {
   .hero {
     text-align: center;
     padding: 100px 0;
+   
   }
   
   .hero-title {
-    font-family: 'Lora', serif;
+    font-family: 'Croissant One', cursive;
     font-weight:700;
-    font-size: 36px;
+    font-size: 60px;
     margin-bottom: 20px;
+    
   }
   
   .hero-text {
-    font-family: 'Lora', serif;
+    font-family: 'Croissant One', cursive;
     font-weight:300;
-    font-size: 18px;
+    font-size: 25px;
+    margin-top: 30px;
     margin-bottom: 30px;
   }
   
@@ -227,3 +237,53 @@ body, h1, h2, h3, p, ul {
   }
 
   
+/* Add this CSS to your styles.css or a separate CSS file */
+
+/* Feature Cards Container */
+.features {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 40px 0;
+  color: black;
+  font-family:'Play', sans-serif;
+}
+
+/* Feature Card Styling */
+.feature {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin: 10px;
+  padding: 15px;
+  text-align: center;
+  max-width: 200px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+  flex: 0 0 auto;
+  border-radius: 5px;
+  overflow: hidden;
+  position: relative;
+}
+
+.feature img {
+  width: auto;
+  height: 100px; 
+  margin-bottom: 10px;
+  background-color: transparent;
+}
+
+.feature h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.feature p {
+  font-size: 1rem;
+}
+
+/* Hover effect (optional) */
+.feature:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}

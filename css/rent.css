@@ -14,7 +14,9 @@ body, h1, h2, p, label, input, button {
   
   /* Style the header */
   .taskbar {
-    background-color: #8D7B68;
+    background: #1D4350;
+    background: -webkit-linear-gradient(to right, #A43931, #1D4350);
+    background: linear-gradient(to right, #A43931, #1D4350); 
     height: fit-content;
     display: flex;
     align-items: center;
