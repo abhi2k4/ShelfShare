@@ -123,9 +123,9 @@ button[type="submit"] {
 }
 
 .navigation ul {
-  list-style: none;
+  list-style:none;
   display: flex;
-  gap: 20px;
+  gap: 40px;
 }
 
 .navigation li {
@@ -136,7 +136,7 @@ button[type="submit"] {
  
 }
 
-.nav-item a{
+.navigation a {
   text-decoration: none;
   color: #fff;
   transition: color 0.3s;

@@ -15,9 +15,9 @@ body, h1, h2, h3, p, ul {
 
 
 .taskbar {
-  background: #1D4350;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #A43931, #1D4350);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #A43931, #1D4350); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #1D4350;
+  background: -webkit-linear-gradient(to right, #A43931, #1D4350); 
+  background: linear-gradient(to right, #A43931, #1D4350);
   
   height: fit-content;
   display: flex;
@@ -94,6 +94,7 @@ body, h1, h2, h3, p, ul {
     background-image: linear-gradient( 135deg, #F05F57 10%, #360940 100%);
     background-image: url(back1.png);
     color: #fff;
+    backdrop-filter: brightness(50);
   }
   
   .navbar {
@@ -151,16 +152,29 @@ body, h1, h2, h3, p, ul {
     margin-bottom: 30px;
   }
   
-  .btn {
-    font-family: 'Play', sans-serif;
-    display: inline-block;
-    padding: 12px 24px;
-    background-color: #b53f0c;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 5px;
-    transition: background-color 0.3s;
-  }
+  
+
+             
+    .btn {
+      background-image: linear-gradient(to right, #C04848 0%, #1f4451  51%, #C04848  100%);
+      margin: 10px;
+      padding: 15px 45px;
+      text-align: center;
+      transition: 0.5s;
+      background-size: 200% auto;
+      color: white;            
+      box-shadow: 0 0 20px #eee;
+      border-radius: 10px;
+      display: inline-block;
+      font-size: 20px;
+    font-family: 'Acme', sans-serif;
+    }
+
+    .btn:hover {
+      background-position: right center; /* change the direction of the change here */
+      color: #fff;
+      text-decoration: none;
+    }
   
   .btn:hover {
     background-color: #e96421;
