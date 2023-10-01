@@ -6,9 +6,8 @@ body, h1, h2, p, label, input, textarea, button {
   border: none;
 }
 
-/* Set a background image for the body */
 body {
-  background-image: url('contact.jpeg'); /* Adjust the path as needed */
+  background-image: url('contact.jpeg');
   background-repeat: no-repeat;
   background-size: cover;
   font-family: Arial, sans-serif;
@@ -16,7 +15,6 @@ body {
   padding: 0;
 }
 
-/* Style the main container */
 .container1 {
   max-width: 860px;
   margin: 0 auto;
@@ -25,8 +23,8 @@ body {
 
 /* Style the contact section */
 .contact {
-  background-color: rgba(255, 255, 255, 0.9); /* Opaque white background */
-  border-radius: 10px; /* Adjust the border radius as needed */
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 10px;
   padding:40px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   text-align: center;
@@ -117,6 +115,7 @@ button[type="submit"] {
 }
 
 .logo img {
+  cursor: pointer;
   width: auto;
   height: 50px;
   margin-right: 20px;

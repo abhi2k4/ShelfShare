@@ -129,12 +129,37 @@ function handleFormSubmit(event) {
 
 submitButton.addEventListener('click', handleFormSubmit);
 
+
+
+ /*----------------Password visibility----------------*/
+
 const inputIcon = document.querySelector(".input__icon");
 const inputPassword = document.querySelector(".password");
-const inputCpassword = document.querySelector(".cpassword");
 
 inputIcon.addEventListener("click", () => {
   inputIcon.classList.toggle("ri-eye-off-line");
   inputIcon.classList.toggle("ri-eye-line");
   inputPassword.type = inputPassword.type === "password" ? "text" : "password";
 });
+
+function togglePasswordVisibility(inputId, iconId) {
+    console.log("Function called with inputId:", inputId);
+    console.log("Function called with iconId:", iconId);
+
+    const passwordInput = document.getElementById(inputId);
+    const passwordIcon = document.getElementById(iconId);
+
+    console.log("Current input type:", passwordInput.type);
+
+    if (passwordInput.type === "password") {
+        passwordInput.type = "text";
+        passwordIcon.classList.remove("ri-eye-off-line");
+        passwordIcon.classList.add("ri-eye-line");
+    } else {
+        passwordInput.type = "password";
+        passwordIcon.classList.remove("ri-eye-line");
+        passwordIcon.classList.add("ri-eye-off-line");
+    }
+
+    console.log("Updated input type:", passwordInput.type);
+}

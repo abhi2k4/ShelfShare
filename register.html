@@ -32,10 +32,11 @@
             <div class="input-box">
                 <input class="password" type="password" id="confirm-password" name="confirm-password" placeholder="Confirm Password" required>
                 <span class="input__icon-wrapper">
-                    <i class="input__icon ri-eye-off-line"></i>
-                  </span>
+                    <i id="confirm-password-icon" class="input__icon ri-eye-off-line" onclick="togglePasswordVisibility('confirm-password', 'confirm-password-icon')"></i>
+                </span>
                 <div id="password-error"></div>
             </div>
+            
             <div class="remember-forgot">
             </div>
             <button type="submit" id="submit-button"  class="btn" >Register</button>

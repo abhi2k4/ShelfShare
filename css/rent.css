@@ -95,12 +95,16 @@ body, h1, h2, p, label, input, button {
   }
   
   h2 {
+    
+    font-family:'Play', sans-serif;
+    align-content: center;
     font-size: 28px;
     margin-bottom: 20px;
   }
 
   
   form {
+    font-family: 'Lora', serif;
     display: flex;
     flex-direction: column;
   }
@@ -113,10 +117,26 @@ body, h1, h2, p, label, input, button {
   input {
     padding: 5px;
     margin-top: 5px;
-    border: 1px solid #ccc;
-    border-radius: 3px;
+    border: 2px solid rgba(255, 255, 255, .2);
+  border-radius: 10px;
+  font-size: 16px;
+  color: hsl(0, 0%, 0%);
   }
-  
+
+  .book-upload p{
+    font-family: 'Acme', sans-serif;
+    color: #b53f0c;
+  }
+
+  textarea {
+    padding: 5px;
+    margin-top: 5px;
+    border: 2px solid rgba(255, 255, 255, .2);
+  border-radius: 10px;
+  font-size: 16px;
+  color: hsl(0, 0%, 0%);
+  }
+
   button {
     background-color: #333;
     color: #fff;
@@ -126,21 +146,45 @@ body, h1, h2, p, label, input, button {
     margin-top: 10px;
     cursor: pointer;
   }
-/* Set the background image for the body */
+
+           
+  button {
+
+    background-image: linear-gradient(to right, #232526 0%, #414345  51%, #232526  100%);
+    margin: 10px;
+    padding: 15px 45px;
+    text-align: center;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;            
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px;
+    display: block;
+    cursor: pointer;
+    font-size: 20px;
+    font-family: 'Acme', sans-serif;
+    max-width: fit-content;
+  }
+
+  button:hover {
+    background-position: right center; 
+    color: #fff;
+    text-decoration: none;
+  }
+ 
 body {
-    background-image: url('rent.jpeg'); /* Adjust the path as needed */
+    background-image: url('rent.jpeg');
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
     font-family: Arial, sans-serif;
-    margin: 0; /* Remove default margin */
-    padding: 0; /* Remove default padding */
-    height: 100vh; /* Set the body height to cover the viewport */
+    margin: 0; 
+    padding: 0;
+    height: 100vh;
   }
-  
-  /* Style the main content */
+  /*form*/
   main {
-    background-color: rgba(255, 255, 255, 0.8); /* Add a semi-transparent white background */
+    background-color: rgba(255, 255, 255, 0.79); 
     padding: 20px;
     margin-top: 50px;
     margin-bottom: 50px;
@@ -149,6 +193,10 @@ body {
     max-width: 960px;
     margin-left: auto ;
     margin-right: auto;
+  }
+
+  main h2{
+    text-align: center;
   }
   
   .container {

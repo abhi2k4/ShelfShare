@@ -38,13 +38,17 @@
                 <label for="description">Description:</label>
                 <textarea id="description" name="description" required></textarea>
 
-                <label for="rental-price">Rental Price (per day):</label>
+                <label for="rental-price">Expecting Rental Price (per week) :</label>
                 <input type="number" id="rental-price" name="rental-price" required>
+                <div id="note">
+                    <p>&#9755; Usual rental price lies between Rs.50-80 <br> &#9755; Your suggestion will be considered on the book's condition </p>
+                </div>
                     
                 <label for="book-image">Book Image:</label>
                 <input type="file" id="book-image" name="book-image" accept="image/*" required>
 
                 <button type="submit">Upload Book</button>
+                
             </form>
         </section>
     </main>
