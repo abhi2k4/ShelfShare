@@ -13,62 +13,66 @@ body, h1, h2, p, label, input, button {
   }
   
   /* Style the header */
-  .taskbar {
-    background: #1D4350;
-    background: -webkit-linear-gradient(to right, #A43931, #1D4350);
-    background: linear-gradient(to right, #A43931, #1D4350); 
-    height: fit-content;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px 20px;
-    color: hsl(0, 4%, 5%);
-  }
+ 
+.taskbar {
+  background: #1D4350;
+  background: -webkit-linear-gradient(to right, #A43931, #1D4350); 
+  background: linear-gradient(to right, #A43931, #1D4350);
   
-  .logo img {
-    width: auto;
-    height: 50px;
-    margin-right: 20px;
-  }
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  color: hsl(0, 4%, 5%);
+}
+
+.logo img {
+  cursor: pointer;
+  width: auto;
+  height: 50px;
+  margin-right: 20px;
+}
+
+.navigation ul {
+  list-style:none;
+  display: flex;
+  gap: 40px;
+}
+
+.navigation li {
+
+  align-content: end;
+  font-size: 20px;
+  font-family: 'Acme', sans-serif;
+ 
+}
+
+.navigation a {
+  text-decoration: none;
+  color: #fff;
+  transition: color 0.3s;
+}
+
+.navigation a:hover {
+  color: #0056b3;
+}
+
+.user-profile img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 2px solid #fff;
   
-  .navigation ul {
-    list-style:none;
-    display: flex;
-    gap: 40px;
-  }
-  
-  .navigation li {
-  
-    align-content: end;
-    font-size: 20px;
-    font-family: 'Acme', sans-serif;
-   
-  }
-  
-  .navigation a {
-    text-decoration: none;
-    color: #fff;
-    transition: color 0.3s;
-  }
-  
-  .navigation a:hover {
-    color: #0056b3;
-  }
-  
-  .user-profile img {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    border: 2px solid #fff;
-    
-  }
-  
-  .user-profile p{
-    color: #b53f0c;
-    font-family:'Play', sans-serif;
-    font-size: 30px;
-  
-  }
+}
+
+.user-profile p{
+  color: #b53f0c;
+  font-family:'Play', sans-serif;
+  font-size: 30px;
+
+}
+
   .nav-act a{
     color: #f67301;
   }
@@ -118,9 +122,10 @@ body, h1, h2, p, label, input, button {
     padding: 5px;
     margin-top: 5px;
     border: 2px solid rgba(255, 255, 255, .2);
-  border-radius: 10px;
-  font-size: 16px;
-  color: hsl(0, 0%, 0%);
+    border-radius: 10px;
+    font-size: 16px;
+    color: hsl(0, 0%, 0%);
+    border-color:#333;
   }
 
   .book-upload p{
@@ -132,9 +137,10 @@ body, h1, h2, p, label, input, button {
     padding: 5px;
     margin-top: 5px;
     border: 2px solid rgba(255, 255, 255, .2);
-  border-radius: 10px;
-  font-size: 16px;
-  color: hsl(0, 0%, 0%);
+    border-radius: 10px;
+    font-size: 16px;
+    color: hsl(0, 0%, 0%);
+    border-color:#333;
   }
 
   button {
@@ -227,73 +233,3 @@ body {
     height: auto;
   }
   
-  /* Responsive styles */
-  @media (max-width: 768px) {
-    main {
-      padding: 10px;
-    }
-  
-    .logo {
-      font-size: 20px;
-    }
-  }
-  
-  /*----------------*/
-.taskbar {
-  background-color: #8D7B68;
-  height: fit-content;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 10px 20px;
-  color: hsl(0, 4%, 5%);
-}
-
-.logo img {
-  width: auto;
-  height: 50px;
-  margin-right: 20px;
-}
-
-.navigation ul {
-  list-style: none;
-  display: flex;
-  gap: 20px;
-}
-
-.navigation li {
-
-  align-content: end;
-  font-size: 20px;
-  font-family: 'Acme', sans-serif;
- 
-}
-
-.nav-item a{
-  text-decoration: none;
-  color: #fff;
-  transition: color 0.3s;
-}
-
-.navigation a:hover {
-  color: #0056b3;
-}
-
-.user-profile img {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  border: 2px solid #fff;
-  
-}
-
-.user-profile p{
-  color: #b53f0c;
-  font-family:'Play', sans-serif;
-  font-size: 30px;
-
-}
-
-.nav-act a{
-  color: #f67301;
-}

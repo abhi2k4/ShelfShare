@@ -221,6 +221,7 @@ body, h1, h2, h3, p, ul {
 }
 
 .book img {
+  align-items: center;
   max-height: 275px;
   max-width: auto;
   padding: 10px;
@@ -267,9 +268,10 @@ body, h1, h2, h3, p, ul {
 }
 
 .feature {
-  background-color: white;
-  border: 1px solid #ddd;
-  border-radius: 5px;
+  background: #DAE2F8;  
+  background: -webkit-linear-gradient(to right, #D6A4A4, #DAE2F8);
+  background: linear-gradient(to right, #D6A4A4, #DAE2F8); 
+  border-radius: 15px;
   margin: 10px;
   padding: 15px;
   text-align: center;
@@ -300,6 +302,6 @@ body, h1, h2, h3, p, ul {
 
 /* Hover effect (optional) */
 .feature:hover {
-  transform: translateY(-5px);
+  transform: translateY(-10px);
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 }
