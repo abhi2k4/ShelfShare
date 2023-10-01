@@ -65,7 +65,9 @@ body {
 
 .footer {
   margin-top: auto;
-  background-color: #f4f4f4;
+  background: #1D4350;
+  background: -webkit-linear-gradient(to right, #A43931, #1D4350); 
+  background: linear-gradient(to right, #A43931, #1D4350);
   padding: 20px 0;
   text-align: center;
 }

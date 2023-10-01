@@ -205,17 +205,21 @@ body {
     text-align: center;
   }
   
-  .container {
+  .container p{
     font-size: large;
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
+    color: white;
    
   }
   .footer {
     
     margin-top: 20px;
-    background-color: #f4f4f4;
+    background: #1D4350;
+  background: -webkit-linear-gradient(to right, #A43931, #1D4350); 
+  background: linear-gradient(to right, #A43931, #1D4350);
+  
     padding: 20px 0;
     text-align: center;
   }
