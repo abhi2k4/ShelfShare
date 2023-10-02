@@ -52,6 +52,8 @@ body, h1, h2, p, label, input, button {
   text-decoration: none;
   color: #fff;
   transition: color 0.3s;
+  font-size: 25px;
+  
 }
 
 .navigation a:hover {
@@ -206,13 +208,14 @@ body {
   }
   
   .container p{
+    font-family: 'Play', sans-serif;
     font-size: large;
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
-    color: white;
-   
+    color: #fff;
   }
+  
   .footer {
     
     margin-top: 20px;

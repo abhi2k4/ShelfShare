@@ -1,5 +1,5 @@
 
-  @import url('https://fonts.googleapis.com/css2?family=Acme&family=Croissant+One&family=Lobster&family=Lora:ital,wght@1,500&family=Play&family=Rajdhani:wght@300;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Croissant+One&family=Lobster&family=Lora:ital,wght@1,500&family=Open+Sans:wght@300;400&family=Play&family=Rajdhani:wght@300;700&display=swap');
 
 body {
     font-family: monospace, sans-serif;
@@ -53,6 +53,7 @@ body, h1, h2, h3, p, ul {
   text-decoration: none;
   color: #fff;
   transition: color 0.3s;
+  font-size: 25px;
 }
 
 .navigation a:hover {
@@ -60,8 +61,8 @@ body, h1, h2, h3, p, ul {
 }
 
 .user-profile img {
-  width: 40px;
-  height: 40px;
+  width: 50px;
+  height: 50px;
   border-radius: 50%;
   border: 2px solid #fff;
   
@@ -170,10 +171,11 @@ body, h1, h2, h3, p, ul {
       display: inline-block;
       font-size: 20px;
     font-family: 'Acme', sans-serif;
+    text-decoration:none;
     }
 
     .btn:hover {
-      background-position: right center; /* change the direction of the change here */
+      background-position: right center;
       color: #fff;
       text-decoration: none;
     }
@@ -184,6 +186,7 @@ body, h1, h2, h3, p, ul {
 
 .container {
   margin-top: 40px;
+
 }
 
 .catalog {
@@ -239,27 +242,163 @@ body, h1, h2, h3, p, ul {
   transform: translateY(-5px);
 }
 
-  
-  .footer {
-    background: #1D4350;
-    background: -webkit-linear-gradient(to right, #A43931, #1D4350); 
-    background: linear-gradient(to right, #A43931, #1D4350);
-    padding: 20px 0;
-    text-align: center;
-  }
-  
-  .fit-picture1 {
-    width: 250px;
-    height: auto;
-  }
+.footer-distributed{
+  background: #1D4350;
+   background: -webkit-linear-gradient(to right, #A43931, #1D4350); 
+   background: linear-gradient(to right, #A43931, #1D4350);
+ box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+ box-sizing: border-box;
+ width: 100%;
+ text-align: left;
+ font: bold 16px sans-serif;
+ padding: 55px 50px;
+}
 
-  .credits {
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    text-align: center;
-    font-size: medium;
-  }
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right{
+ display: inline-block;
+ vertical-align: top;
+}
 
+/* Footer left */
+
+.footer-distributed .footer-left{
+ width: 40%;
+}
+.footer-left img{
+   width:250px;
+}
+
+/* The company logo */
+
+.footer-distributed h3{
+ color:  #ffffff;
+ font: normal 36px 'Open Sans', cursive;
+ margin: 0;
+}
+
+.footer-distributed h3 span{
+ color:  lightseagreen;
+}
+
+/* Footer links */
+
+.footer-distributed .footer-links{
+ color:  #ffffff;
+ margin: 20px 0 12px;
+ padding: 0;
+}
+
+.footer-distributed .footer-links a{
+ display:inline-block;
+ line-height: 1.8;
+ font-weight:400;
+ text-decoration: none;
+ color:  inherit;
+}
+
+.footer-distributed .footer-company-name{
+ color:  #ffffff;
+ font-size: 14px;
+ font-weight: normal;
+ margin: 0;
+}
+
+/* Footer Center */
+
+
+.footer-distributed .footer-center{
+ width: 35%;
+}
+
+.footer-distributed .footer-center i{
   
+ background-color:  #33383b;
+ color: #ffffff;
+ font-size: 25px;
+ width: 38px;
+ height: 38px;
+ border-radius: 50%;
+ text-align: center;
+ line-height: 42px;
+ margin: 10px 15px;
+ vertical-align: middle;
+}
+
+.footer-distributed .footer-center i.fa-envelope{
+ font-size: 17px;
+ line-height: 38px;
+}
+
+.footer-distributed .footer-center p{
+  font-family: 'Play', sans-serif;
+ display: inline-block;
+ color: #ffffff;
+ font-weight:400;
+ vertical-align: middle;
+ margin:0;
+}
+
+.footer-distributed .footer-center p span{
+ display:block;
+ font-weight: normal;
+ font-size:14px;
+ line-height:2;
+}
+
+.footer-distributed .footer-center a{
+  color: white;
+  text-decoration: none;
+}
+.footer-distributed .footer-center p a{
+ color:  lightseagreen;
+ text-decoration: none;;
+}
+
+.footer-distributed .footer-links a:before {
+ content: "|";
+ font-weight:300;
+ font-size: 20px;
+ left: 0;
+ color: #fff;
+ display: inline-block;
+ padding-right: 5px;
+}
+
+.footer-distributed .footer-links .link-1:before {
+ content: none;
+}
+
+.map{
+  font-weight: 400;
+  color: #fff;
+}
+/* Footer Right */
+
+.footer-distributed .footer-right{
+  text-align: center;
+ width: 20%;
+}
+
+.footer-distributed .footer-company-about{
+  font-family: 'Acme', sans-serif;
+ color:  #21b1aa;
+ font-size: 20px;
+ font-weight: normal;
+ margin: 0;
+}
+
+.footer-distributed .footer-company-about span{
+  font-family: 'Play', sans-serif;
+ display: block;
+ color:  #ffffff;
+ font-size: 14px;
+ font-weight: bold;
+ margin-bottom: 20px;
+}
+
+
 .features {
   display: flex;
   justify-content: space-around;
@@ -307,3 +446,5 @@ body, h1, h2, h3, p, ul {
   transform: translateY(-10px);
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 }
+
+

@@ -71,6 +71,16 @@ body {
   padding: 20px 0;
   text-align: center;
 }
+
+.container p{
+  font-family: 'Play', sans-serif;
+  font-size: large;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  color: #fff; 
+}
+
 .credits {
   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   text-align: center;
