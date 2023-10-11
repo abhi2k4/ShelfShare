@@ -1,0 +1,123 @@
+[
+    {
+      "title": "The Great Gatsby",
+      "author": "F. Scott Fitzgerald",
+      "description": "A classic novel set in the roaring twenties.",
+      "expectingRent": 55,
+      "bookImage": "https://example.com/book1.jpg",
+      "type": "fiction"
+    },
+    {
+      "title": "To Kill a Mockingbird",
+      "author": "Harper Lee",
+      "description": "A story about racial injustice in the American South.",
+      "expectingRent": 58,
+      "bookImage": "https://example.com/book2.jpg",
+      "type": "fiction"
+    },
+    {
+      "title": "Pride and Prejudice",
+      "author": "Jane Austen",
+      "description": "A romantic novel set in 19th-century England.",
+      "expectingRent": 52,
+      "bookImage": "https://example.com/book3.jpg",
+      "type": "romance"
+    },
+    {
+      "title": "1984",
+      "author": "George Orwell",
+      "description": "A dystopian novel depicting a totalitarian society.",
+      "expectingRent": 56,
+      "bookImage": "https://example.com/book4.jpg",
+      "type": "fiction"
+    },
+    {
+      "title": "The Catcher in the Rye",
+      "author": "J.D. Salinger",
+      "description": "A coming-of-age novel featuring Holden Caulfield.",
+      "expectingRent": 53,
+      "bookImage": "https://example.com/book5.jpg",
+      "type": "fiction"
+    },
+    {
+      "title": "The Hobbit",
+      "author": "J.R.R. Tolkien",
+      "description": "A fantasy adventure of Bilbo Baggins.",
+      "expectingRent": 60,
+      "bookImage": "https://example.com/book6.jpg",
+      "type": "fantasy"
+    },
+    {
+      "title": "The Da Vinci Code",
+      "author": "Dan Brown",
+      "description": "A mystery thriller involving symbolism and art.",
+      "expectingRent": 55,
+      "bookImage": "https://example.com/book7.jpg",
+      "type": "mystery"
+    },
+    {
+      "title": "The Shining",
+      "author": "Stephen King",
+      "description": "A horror novel set in a haunted hotel.",
+      "expectingRent": 57,
+      "bookImage": "https://example.com/book8.jpg",
+      "type": "fiction"
+    },
+    {
+      "title": "The Alchemist",
+      "author": "Paulo Coelho",
+      "description": "A philosophical novel about a journey to find one's destiny.",
+      "expectingRent": 54,
+      "bookImage": "https://example.com/book9.jpg",
+      "type": "fiction"
+    },
+    {
+      "title": "Harry Potter and the Sorcerer's Stone",
+      "author": "J.K. Rowling",
+      "description": "The first book in the Harry Potter series.",
+      "expectingRent": 51,
+      "bookImage": "https://example.com/book10.jpg",
+      "type": "fantasy"
+    },
+    {
+      "title": "Jane Eyre",
+      "author": "Charlotte Brontë",
+      "description": "A classic novel of love and independence.",
+      "expectingRent": 59,
+      "bookImage": "https://example.com/book11.jpg",
+      "type": "romance"
+    },
+    {
+      "title": "The Girl with the Dragon Tattoo",
+      "author": "Stieg Larsson",
+      "description": "A thriller featuring investigative journalist Mikael Blomkvist.",
+      "expectingRent": 55,
+      "bookImage": "https://example.com/book12.jpg",
+      "type": "mystery"
+    },
+    {
+      "title": "The Chronicles of Narnia",
+      "author": "C.S. Lewis",
+      "description": "A series of fantasy novels set in the magical world of Narnia.",
+      "expectingRent": 60,
+      "bookImage": "https://example.com/book13.jpg",
+      "type": "fantasy"
+    },
+    {
+      "title": "Gone with the Wind",
+      "author": "Margaret Mitchell",
+      "description": "An epic historical romance novel set during the American Civil War.",
+      "expectingRent": 56,
+      "bookImage": "https://example.com/book14.jpg",
+      "type": "romance"
+    },
+    {
+      "title": "The Hound of the Baskervilles",
+      "author": "Arthur Conan Doyle",
+      "description": "A classic Sherlock Holmes detective novel.",
+      "expectingRent": 54,
+      "bookImage": "https://example.com/book15.jpg",
+      "type": "mystery"
+    }
+  ]
+  
