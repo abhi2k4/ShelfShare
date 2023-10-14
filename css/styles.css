@@ -119,17 +119,15 @@ body, h1, h2, h3, p, ul {
     width: auto;
     height: 10%;
     display: block;
-  margin-left: auto;
+  margin-left: 200px;
   margin-right: auto;
   margin-bottom: -40px;
   }
   
   .container {
-
     font-size: large;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 20px;
   }
 
   .credits1{
@@ -138,15 +136,14 @@ body, h1, h2, h3, p, ul {
     padding: 5px;
     padding-left: 20px;
     background: rgba(0, 0, 0, 0.5);
-    border-radius:10px 0px 0px 10px;
+    border-radius:10px;
     width: 120px;
     height: auto;
   }
 
   .credits1:hover{
-    margin-left: -10px;
     transform: translate(-10px);
-    transition-duration: 0.3s;
+    transition-duration: 0.1s;
     box-shadow: 0 0 20px #eee;
   }
   .coin img{
@@ -271,37 +268,62 @@ body, h1, h2, h3, p, ul {
 }
 
 .book {
-  font-family: 'Acme', sans-serif;
+  font-family: 'Play', sans-serif;
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin: 10px;
+  padding: 15px;
+  text-align: center;
+  max-width: 250px;
+  min-height: 400px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
   flex: 0 0 auto;
-  max-width: 200px;
-  
   border-radius: 5px;
   overflow: hidden;
-  transition: transform 0.3s;
-  background-color: white;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
-
-  max-block-size: 350 250;
-}
-
-.book img {
-  align-items: center;
-  max-height: 275px;
-  max-width: auto;
-  padding: 10px;
-  border-color: black;
-}
-
-.book p {
-  padding: 10px;
-  text-align: center;
-  font-size: 16px;
-  background-color: #fff;
+  position: relative;
+  column-width: 250px;
 }
 
 .book:hover {
   transform: translateY(-5px);
 }
+
+.book img {
+min-height: 230px;
+  max-width: 150px;
+  height: auto;
+  border-radius: 5px;
+
+}
+
+.book h2 {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+.book p {
+  font-size: 14px;
+  margin: 5px 0;
+}
+
+.book button {
+  font-family: 'Play', sans-serif;
+background-color: #0077B5;
+color: white;
+padding: 10px 20px;
+border: none;
+border-radius: 5px;
+font-size: 18px;
+cursor: pointer;
+position: absolute;
+bottom: 10px;
+left: 50%;
+transform: translateX(-50%);
+width: 75%; 
+}
+
 
 .footer-distributed{
   background: #1D4350;
