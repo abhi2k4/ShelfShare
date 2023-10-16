@@ -145,6 +145,25 @@ body, h1, h2, p, label, input, button {
     border-color:#333;
   }
 
+  .genre-filter {
+    text-align:justify;
+    margin: 20px 0;
+    font-family: 'Acme', sans-serif;
+}
+
+.genre-filter label {
+    font-size: 16px;
+    font-family: 'Lora', serif;
+}
+
+#genre-select {
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: 'Acme', sans-serif;  
+}
+
   button {
     background-color: #333;
     color: #fff;

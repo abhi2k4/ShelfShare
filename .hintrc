@@ -10,7 +10,8 @@
           "backdrop-filter",
           "accent-color",
           "height: fit-content",
-          "max-width: fit-content"
+          "max-width: fit-content",
+          "min-height: fit-content"
         ]
       }
     ],
