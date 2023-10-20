@@ -127,7 +127,7 @@ body, h1, h2, h3, p, ul {
   
   .container {
     font-size: large;
-    max-width: 1200px;
+    max-width: 100%;
     margin: 0 auto;
   }
 
