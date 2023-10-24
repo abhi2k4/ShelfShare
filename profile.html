@@ -7,52 +7,179 @@
     <link rel="stylesheet" href="./css/profile.css">
     <link rel="icon" type="image/x-icon" href="./images/logo.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel='stylesheet' href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css'>
 </head>
 <body>
-    <a href="home.html"  class="home-icon">
-        <i class="fas fa-home"></i>
-    </a>
-    <div class="profile-container">
-    <div class="link">
-        <h2> Dashboard </h2>
-        <img class="profile-photo" src="./images/user.png" alt="Profile Avatar">
-        <div class="profile-name">AP Shah</div>
-        <p class="link-nav">
-            <a href="#">Dashboard</a><br>
+       <div class="sidebar">
+            <div class="logo-details">
+              <div class="logo_name">
+                <a href="home.html"> <img src="./images/shelfshare.png" alt="logo"></a>
+              </div>
+              <i class='bx bx-menu' id="btn"></i>
+            </div>
+            <ul class="nav-list">
+              <li>
+                <i class='bx bx-search'></i>
+                <input type="text" placeholder="Search...">
+                <span class="tooltip">Search</span>
+              </li>
+              <li>
+                <a onclick="showContent('section1')">
+                  <i class='bx bx-grid-alt'></i>
+                  <span class="links_name">Dashboard</span>
+                </a>
+                <span class="tooltip">Dashboard</span>
+              </li>
+              <li>
+                <a onclick="showContent('section2')">
+                  <i class='bx bx-user'></i>
+                  <span class="links_name">User</span>
+                </a>
+                <span class="tooltip">User</span>
+              </li>
+              <li>
+                <a onclick="showContent('section3')">
+                  <i class='bx bx-cart-alt'></i>
+                  <span class="links_name">Rental Desk</span>
+                </a>
+                <span class="tooltip">Rental Desk</span>
+              </li>
+              <li>
+                <a onclick="showContent('section4')">
+                  <i class='bx bx-heart'></i>
+                  <span class="links_name">Favourite Books</span>
+                </a>
+                <span class="tooltip">Favourite Books</span>
+              </li>
+              <li>
+                <a onclick="showContent('section5')">
+                  <i class='bx bx-chat'></i>
+                  <span class="links_name">Community</span>
+                </a>
+                <span class="tooltip">Community</span>
+              </li>
+              <li>
+                <a onclick="showContent('section6')">
+                  <i class='bx bx-cog'></i>
+                  <span class="links_name">Setting</span>
+                </a>
+                <span class="tooltip">Setting</span>
+              </li>
+              <li class="profile">
+                <div class="profile-details">
+                  <img src="./images/user.png" alt="profileImg">
+                  <div class="name_mail">
+                    <div class="name">AP Shah</div>
+                    <div class="mail">apshah@gmail.com</div>
+                  </div>
+                </div>
+                <i class='bx bx-log-out' id="log_out"></i>
+              </li>
+            </ul>
+          </div>
 
-            <a href="#" class="link-1">Profile</a><br>
-            
-            <a href="# ">Edit Profile</a><br>
           
-            <a href="contact.html">Rental Desk</a><br>
-            
-            <a href="profile.html">Favourite Books</a>
-          </p>
-    </div>
-       
-        <div class="profile-description">
-            <img class="profile-image" src="./images/user.png" alt="Your Name">
-        <div class="profile-name">AP Shah</div>
-            <p>Email: apshah@gmail.com</p>
-            <p>Contact Number: +91 9874563210</p>
-            <h3>Address</h3>
-            <p> A.P. Shah Institute Of Technology<br>
-                Survey No. 12, 13
-                Opp. Hypercity Mall, Kasarvadavali,
-                Ghodbunder Road, Thane West,
-                Maharashtra 400615</p>
-            <h3>Book Category Preferences</h3>
-            <p>Mystery, Science Fiction, Fantasy</p>
-        </div>
-    </div>
-    <footer class="footer">
-        <div class="container">
-          <p>&copy; 2023 ShelfShare. All rights reserved.</p>
-         
-          <img class="fit-picture1" src="./images/shelfshare.png" alt="ShelfShare">
-    
-        </div>
-      </footer>
-   
+          <section  class="home-section" id="section1">
+            <div class="text">Dashboard</div>          
+              <div class="profile-container2">  
+                <div class="profile">
+                <img class="profile-image" src="./images/user.png" alt="Your Name"></div>
+                <div class="profile-description">
+                  <div class="profile-name">AP Shah</div>
+                      <h3>Book Category Preferences</h3>
+                      <p>Mystery, Science Fiction, Fantasy</p>
+                </div>
+                  <div class="cards">
+                    <div class="card">
+                      <h3>Books Rented</h3>
+                      <p>25</p>
+                  </div>
+                  <div class="card">
+                      <h3>Books Put on Rent</h3>
+                      <p>15</p>
+                  </div>
+                  <div class="card">
+                      <h3>Credits Earned</h3>
+                      <p>50</p>
+                  </div>
+                  </div>
+              </div>
+              
+              
+              </section>
+
+          <section  class="home-section" id="section2">
+            <div class="text">User</div>          
+              <div class="profile-container1">  
+                <div class="profile-description">
+                      <img class="profile-image" src="./images/user.png" alt="Your Name">
+                  <div class="profile-name">AP Shah</div>
+                      <p>Email: apshah@gmail.com</p>
+                      <p>Contact Number: +91 9874563210</p>
+                      <h3>Address</h3>
+                      <p> A.P. Shah Institute Of Technology<br>
+                          Survey No. 12, 13
+                          Opp. Hypercity Mall, Kasarvadavali,
+                          Ghodbunder Road, Thane West,
+                          Maharashtra 400615</p>
+                      <h3>Book Category Preferences</h3>
+                      <p>Mystery, Science Fiction, Fantasy</p>
+                  </div>
+              </div>
+              
+              </section>
+
+              
+                  <section  class="home-section" id="section3">
+                    
+                    
+                  </section>
+                 
+   <script>
+        let sidebar = document.querySelector(".sidebar");
+        let closeBtn = document.querySelector("#btn");
+        let searchBtn = document.querySelector(".bx-search");
+        closeBtn.addEventListener("click", () => {
+        sidebar.classList.toggle("open");
+        menuBtnChange(); 
+        });
+        searchBtn.addEventListener("click", () => {
+        sidebar.classList.toggle("open");
+        menuBtnChange(); 
+        });
+        function menuBtnChange() {
+        if (sidebar.classList.contains("open")) {
+            closeBtn.classList.replace("bx-menu", "bx-menu-alt-right");
+        } else {
+            closeBtn.classList.replace("bx-menu-alt-right", "bx-menu");
+        }
+        }
+   </script>
+   <script>
+        function showContent(id) {
+            const sections = document.querySelectorAll('.home-section');
+            sections.forEach(section => {
+                section.style.display = 'none'; // Hide all sections
+            });
+
+            const content = document.getElementById(id);
+            content.style.display = 'block'; // Show the selected section
+        }
+   </script>
+
+   <script>
+    $('.order').click(function(e) {
+    let button = $(this);
+
+    if(!button.hasClass('animate')) {
+        button.addClass('animate');
+        setTimeout(() => {
+            button.removeClass('animate');
+        }, 10000);
+    }
+
+});
+
+   </script>
 </body>
 </html>
