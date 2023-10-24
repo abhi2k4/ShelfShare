@@ -140,11 +140,13 @@ body, h1, h2, h3, p, ul {
     border-radius:10px;
     width: 120px;
     height: auto;
+    transition: transform 0.3s ease;
+    margin-right: 10px;
   }
 
   .credits1:hover{
     transform: translate(-10px);
-    transition-duration: 0.1s;
+    transition-duration: 0.3s;
     box-shadow: 0 0 20px #eee;
   }
   .coin img{
