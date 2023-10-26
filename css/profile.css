@@ -5,7 +5,6 @@ body {
   background-image: url(pfbg.jpg);
   font-family: monospace, sans-serif;
   background-size:cover;
-  background-repeat: no-repeat;
   font-family: Arial, sans-serif;
   margin-bottom: auto;
   padding: 0;
@@ -266,7 +265,7 @@ body {
   width: 70%;
 }
 .profile-container1 {
-  justify-content: center;
+  justify-content: right;
   max-width:  1200px;;
   max-height: 1200px;
   margin: 0 auto;
@@ -344,34 +343,8 @@ body {
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 }
 
-.profile-container2 {
-  justify-content: center;
-  max-width:  1200px;;
-  max-height: 1200px;
-  margin: 0 auto;
-  padding: 30px;
-  background-color: rgba(255, 255, 255, 0.75);
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-  text-align: center;
-}
-
-
-.profile-container2.profile-image {
-  max-width: 200px;
-  border-radius: 50%;
-  margin: 20px auto;
-  display: block;
-}
-
-.profile-container2.profile-name {
-  font-size: 36px;
-  font-weight: bold;
-  margin-bottom: 10px;
-}
-
-.profile-container2.profile-image,.profile-container2.profile-name h3 p{
- display: inline-block;
  
+.countdown {
+  font-size: 60px;
+  margin-top: 50px;
 }
-

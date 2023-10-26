@@ -19,10 +19,11 @@
             </div>
             <ul class="nav-list">
               <li>
-                <i class='bx bx-search'></i>
-                <input type="text" placeholder="Search...">
-                <span class="tooltip">Search</span>
-              </li>
+                <form id="search-form" action="browse.html" method="get">
+                  <i class='bx bx-search'></i>
+                  <input type="text" name="search" placeholder="Search...">
+                  <span class="tooltip">Search</span>
+              </form>
               <li>
                 <a onclick="showContent('section1')">
                   <i class='bx bx-grid-alt'></i>
@@ -46,10 +47,10 @@
               </li>
               <li>
                 <a onclick="showContent('section4')">
-                  <i class='bx bx-heart'></i>
-                  <span class="links_name">Favourite Books</span>
+                  <i class='bx bx-history'></i>
+                  <span class="links_name">Shelf History</span>
                 </a>
-                <span class="tooltip">Favourite Books</span>
+                <span class="tooltip">Shelf History</span>
               </li>
               <li>
                 <a onclick="showContent('section5')">
@@ -81,7 +82,7 @@
           
           <section  class="home-section" id="section1">
             <div class="text">Dashboard</div>          
-              <div class="profile-container2">  
+              <div class="profile-container1">  
                 <div class="profile">
                 <img class="profile-image" src="./images/user.png" alt="Your Name"></div>
                 <div class="profile-description">
@@ -131,7 +132,29 @@
 
               
                   <section  class="home-section" id="section3">
+                    <div class="text">Rental Desk</div>  
+                    <div class="profile-container1">
+                      
+                    </div>
                     
+                  </section>
+              
+                  <section  class="home-section" id="section4">
+                    <div class="text">Shelf History</div>  
+                    <div class="profile-container1">
+                      
+                    </div>
+                  </section>
+
+                  <section  class="home-section" id="section5">
+                    <div class="text">Community Announcements</div>  
+                    <div class="profile-container1">
+                      
+                    </div>
+                  </section>
+
+                  <section  class="home-section" id="section6">
+                    <div class="text">Dashboard</div>  
                     
                   </section>
                  
@@ -181,5 +204,11 @@
 });
 
    </script>
+   
+   <script>
+    window.addEventListener('load', function () {
+        showContent('section1'); 
+    });
+  </script>
 </body>
 </html>

@@ -26,7 +26,10 @@
           <a href="profile.html" ><img src="./images/user.png" alt="User Photo" ></a>
         </div>
     </header>
-
+<div class="searchtab">
+    <div class="search-bar">
+        <input type="text" id="search-input" placeholder="Search books by title">
+    </div>
     <div class="genre-filter">
         <label for="genre-select">Filter by Genre:</label>
         <select id="genre-select">
@@ -38,8 +41,9 @@
             <option value="Romance">Romance</option>
             <!-- Add more genre options here -->
         </select>
+        
     </div>
-
+</div>
     <div class="book-list">
         <div class="book" data-genre="Non-Fiction">
             <img src="./images/book1.jpeg" alt="Book 1">
@@ -341,6 +345,53 @@
                 }
             }
         });
+    </script>
+    <script>
+        // JavaScript to handle the dynamic, case-insensitive search functionality
+        const searchInput = document.getElementById("search-input");
+        const books = document.querySelectorAll(".book");
+
+        searchInput.addEventListener("input", () => {
+            const searchTerm = searchInput.value.trim().toLowerCase(); // Convert search term to lowercase
+            
+            // Filter books based on the case-insensitive search term (title or author)
+            books.forEach(book => {
+                const title = book.querySelector("h2").textContent.toLowerCase(); // Convert title to lowercase
+                const author = book.querySelector("p:nth-of-type(2)").textContent.toLowerCase(); // Convert author to lowercase
+                if (title.includes(searchTerm) || author.includes(searchTerm)) {
+                    book.style.display = "block";
+                } else {
+                    book.style.display = "none";
+                }
+            });
+        });
+    </script>
+    <script>
+         document.addEventListener("DOMContentLoaded", function () {
+        // Get the search query from the URL
+        const urlParams = new URLSearchParams(window.location.search);
+        const searchQuery = urlParams.get("search");
+
+        // Handle the search query
+        if (searchQuery) {
+            const searchInput = document.getElementById("search-input");
+            searchInput.value = searchQuery;
+
+            // Filter books based on the search query
+            const books = document.querySelectorAll(".book");
+
+            books.forEach(book => {
+                const title = book.querySelector("h2").textContent.toLowerCase();
+                const author = book.querySelector("p:nth-of-type(2)").textContent.toLowerCase();
+
+                if (title.includes(searchQuery) || author.includes(searchQuery)) {
+                    book.style.display = "block";
+                } else {
+                    book.style.display = "none";
+                }
+            });
+        }
+    });
     </script>
 </body>
 </html>
