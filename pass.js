@@ -66,26 +66,8 @@ function validatePassword(password) {
     return '  ';
 }
 
-/*toggleButton.addEventListener('click', () => {
-    togglePasswordVisibility();
-})
-
-function togglePasswordVisibility() {
-    if (passwordInput.type === 'password') {
-        passwordInput.type = 'text';
-        passwordIcon.classList.remove('far', 'fa-eye');
-        passwordIcon.classList.add('far', 'fa-eye-slash'); // Show the eye-slash icon
-    } else {
-        passwordInput.type = 'password';
-        passwordIcon.classList.remove('far', 'fa-eye-slash');
-        passwordIcon.classList.add('far', 'fa-eye'); // Show the eye icon
-    }
-}*/
-
 
 const passwordInput = document.getElementById('password');
-/*const toggleButton = document.getElementById('togglePassword');
-const passwordIcon = document.getElementById('passwordIcon');*/
 const passwordFeedback = document.getElementById('password-feedback');
 const confirmPasswordInput = document.getElementById('confirm-password');
 const passwordError = document.getElementById('password-error');
