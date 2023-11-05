@@ -6,7 +6,6 @@ body {
     margin: 0;
     padding: 0;
     background-color: #fff8f0;
-    max-width: 100%;
   }
 
 
@@ -67,6 +66,12 @@ body, h1, h2, h3, p, ul {
   border-radius: 50%;
   border: 2px solid #fff;
   
+}
+
+.dropdown img:hover{
+  transform:scale3d(-10px);
+    transition-duration: 0.3s;
+    box-shadow: 0 0 10px #eee;
 }
 
 .dropdown p{
@@ -133,10 +138,9 @@ body, h1, h2, h3, p, ul {
     cursor: pointer;
     font-family:'Play', sans-serif;
     padding: 5px;
-    padding-left: 20px;
     background: rgba(0, 0, 0, 0.5);
     border-radius:10px;
-    width: 120px;
+    width: 120px;   
     height: auto;
     transition: transform 0.3s ease;
     margin-right: 10px;
@@ -154,7 +158,7 @@ body, h1, h2, h3, p, ul {
   
   .header1 {
     background-image: linear-gradient( 135deg, #F05F57 10%, #360940 100%);
-    background-image: url(back1.png);
+    background-image: url('./../images/back1.png');
     color: #fff;
     backdrop-filter: brightness(50);
   }
