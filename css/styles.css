@@ -123,8 +123,7 @@ body, h1, h2, h3, p, ul {
     width: auto;
     height: 10%;
     display: block;
-  margin-left: 200px;
-  margin-right: auto;
+  margin-right: -200px;
   margin-bottom: -40px;
   }
   
