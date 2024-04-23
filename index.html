@@ -1,260 +1,395 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./css/styles.css">
-  <title>ShelfShare - Book Rental Services</title>
-  <link rel="icon" type="image/x-icon" href="./images/logo.png">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News Headlines</title>
+    <link rel="icon" href="https://res.cloudinary.com/ds2uw5gcw/image/upload/v1712660151/Trade_Pulse_ico_cjjdf5.png" type="image/x-icon">  
+ </head>
+ <style>
+  @import url("https://fonts.googleapis.com/css?family=Poppins:wght@500&family=Roboto:wght@100;300;400;500;700;900&display=swap");
 
-</head>
-<body>
-  <header class="taskbar">
-    <div class="logo">
-        <img href='index.html' src="./images/shelfshare.png" alt="ShelfShare Logo">
-        
-    </div>
-    <nav class="navigation">
-        <ul>
-          <li class="nav-item"><a href="index.html">Home  </a></li>
-          <li class="nav-item"><a href="login.html">Put on Rent  </a></li>
-          <li class="nav-item"><a href="browse.html">Browse  </a></li>
-          <li class="nav-item"><a href="contact.html">Contact Us</a></li>
-        </ul>
-    </nav>
-    <div  class="user-profile">
-      <a href="login.html" class="btn btn-primary">Login</a>
-    </div>
-</header>
-  <header class="header1">
-    <nav class="navbar">
-      <div class="container">
-        
-        <img class="fit-picture" src="./images/shelfshare.png" alt="ShelfShare">
-      </div>
-    </nav>
-    <div class="container">
-      <div class="hero">
-        
-      
-        <h1 class="hero-title">Explore and Share Amazing Books</h1>
-        <p class="hero-text">Join ShelfShare and embark on a journey through the world of literature.</p>
-        <a href="register.html" class="btn btn-primary">Get Started</a>
-        <section class="features">
-          <div class="feature">
-              <img src="./images/colstack.png" alt="Feature 1 Icon">
-              <h3>Wide Book Selection</h3>
-              <p>Choose from a vast collection of books across different genres.</p>
-          </div>
-      
-          <div class="feature">
-            <img src="./images/options.svg" alt="Feature 2 Icon">
-            <h3>Flexible Rental Options</h3>
-            <p>Rent books on a weekly basis with affordable pricing.</p>
-        </div>
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-text-color: #183b56;
+    --secondary-text-color: #577592;
+    --accent-color: #2294ed;
+    --accent-color: #1d69a3;
+}
+
+body {
+
+    font-family: "Poppins", sans-serif;
+    color: var(--primary-text-color);
+    background: #212529;
+}
+
+p {
+    font-family: "Roboto", sans-serif;
+    color: var(--secondary-text-color);
+    line-height: 1.4rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+ul {
+    list-style: none;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+.container {
+     max-width: 1180px;
+     margin-inline: auto;
+    overflow: hidden;
+
+} 
+
+nav {
+    background-color: rgb(240, 241, 255);
+    box-shadow: 0 0 4px #05036e;
+    position: fixed;
+    top: 0;
+    z-index: 99;
+    left: 0;
+    right: 0; 
     
-        <div class="feature">
-            <img src="./images/share.svg" alt="Feature 3 Icon">
-            <h3>Easy Sharing</h3>
-            <p>Share your own books with other book enthusiasts effortlessly.</p>
+
+}
+
+.placeholder{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 15vh;
+    background-image: url(https://i.brecorder.com/primary/2022/12/241730193a78f7e.gif);
+    background-size: cover;
+  }
+
+  .navholder{
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -8vh;
+    color: #212529;
+  }
+  .navb {
+    max-height: 100px;
+    position: fixed;
+    border-radius: 50px;
+    padding: 2em 0;
+    background-color: #212529;
+    border: white groove 1px;
+    box-shadow: 0 0 10px 0 #ffffff;
+  }
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-height:2px;
+    padding: 0 15px;
+    /* margin-top: -3em; */
+  }
+  .navbar > div {
+    flex-grow: 1;
+    max-height: 100px;
+  }
+  .nav-left {
+    text-align: right;
+    .navbar-link{
+      a{
+        text-decoration: none;
+        color: #ffffff;
+        transition:all 0.3s ease;
+      }
+      :hover{
+        color: red;
+        transition: all 0.3s ease;
+      }
+
+    }
+  }
+    .nav-right {
+      text-align: left;
+      .navbar-link{
+        a{
+          text-decoration: none;
+          color: #ffffff;
+          transition:all 0.3s ease;
+        }
+        :hover{
+          color: #00bf63;
+          transition: all 0.3s ease;
+        }
+  
+      }
+  }
+  .nav-logo {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: -5px;
+    position: relative;
+    background-color: white;
+    border:#212529 solid 2px;
+    border-radius: 50px;
+    img{
+      width: 100px;
+      
+    }
+  }
+  .navbar-link {
+    cursor:pointer;
+    text-align: center;
+    display: inline-block;
+    font-size: 1em;
+    margin: 0 0.5em;
+    font-weight: 600;
+    color: #ffffff;
+    width: 8vw;
+  }
+
+
+.news-input {
+    width: 200px;
+    height: 100%;
+    padding-inline: 12px;
+    border-radius: 4px;
+    border: 2px solid #bbd0e2;
+    font-family: "Roboto", sans-serif;
+}
+
+
+.search-button {
+    background-color: var(--accent-color);
+    color: white;
+    padding: 8px 24px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: "Roboto", sans-serif;
+}
+
+.search-button:hover {
+    background-color: var(--accent-color-dark);
+
+}
+
+main {
+    padding-block: 20px;
+    margin-top: 80px;
+     
+}
+
+.cards-container {
+    justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 20px;
+    align-items: start;
+}
+
+.card {
+    width: 360px;
+    min-height: 550px;
+    box-shadow: 0 0 4px #d4ecff;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: #fff;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    padding: 8px;
+}
+
+.card:hover {
+    box-shadow: 1px 1px 8px #d4ecff;
+    background-color: #f9fdff;
+    transform: translateY(-2px);
+}
+
+.card-header img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 12px;
+}
+
+.news-source {
+    margin-block: 12px;
+}
+
+
+
+ </style>
+ <body>
+  <div class="placeholder"></div>
+  <div class="navholder">
+    <div class="navb">
+        <div class="navbar">
+          <div class="nav-left">
+            <a class="navbar-link" id="finance" onclick="onNavItemClick('finance')">Finance</a>
+          </div>
+          <div class="nav-logo">
+            <img src="https://res.cloudinary.com/ds2uw5gcw/image/upload/v1712660151/Trade_Pulse_idzyuu.png" alt="">
+          </div>
+          <div class="nav-right">
+            <a class="navbar-link" id="Cryptocurrency" onclick="onNavItemClick('Cryptocurrency')">Cryptocurrency</a>
+          </div>
         </div>
-      
-          <div class="feature">
-              <img src="./images/profile.png" alt="Feature 4 Icon">
-              <h3>User Profiles</h3>
-              <p>Create and manage your profile, keep track of your rentals, and more.</p>
-          </div>
-      </section>
       </div>
     </div>
-  </header>
-  <main class="container">
-    <section class="catalog">
-      <h1>Newly Added</h1>
-      <div class="book-container">
-        <div class="book" data-genre="Science Fiction">
-          <img src="./books/book11.jpg" alt="Neuromancer">
-          <h2>Neuromancer</h2>
-          <p>Author: William Gibson</p>
-          <p>Genre: Science Fiction</p>
-          <button>Add to Cart</button>
-        </div>
-  
-      <div class="book" data-genre="Science Fiction">
-          <img src="./books/12.webp" alt="Ender's Game">
-          <h2>Ender's Game</h2>
-          <p>Author: Orson Scott Card</p>
-          <p>Genre: Science Fiction</p>
-          <button>Add to Cart</button>
-      </div>
-  
-      <div class="book" data-genre="Science Fiction">
-          <img src="./books/13.jpg" alt="Foundation">
-          <h2>Foundation</h2>
-          <p>Author: Isaac Asimov</p>
-          <p>Genre: Science Fiction</p>
-          <button>Add to Cart</button>
-      </div>
-  
-      <div class="book" data-genre="Science Fiction">
-          <img src="./books/14.jpg" alt="Brave New World">
-          <h2>Brave New World</h2>
-          <p>Author: Aldous Huxley</p>
-          <p>Genre: Science Fiction</p>
-          <button>Add to Cart</button>
-      </div>
-  
-      <!-- Fantasy -->
-      <div class="book" data-genre="Fantasy">
-          <img src="./books/15.jpg" alt="The Lord of the Rings">
-          <h2>The Lord of the Rings</h2>
-          <p>Author: J.R.R. Tolkien</p>
-          <p>Genre: Fantasy</p>
-          <button>Add to Cart</button>
-      </div>
-  
-      <div class="book" data-genre="Fantasy">
-          <img src="./books/16.jpeg" alt="Harry Potter and the Sorcerer's Stone">
-          <h2>Harry Potter and the Sorcerer's Stone</h2>
-          <p>Author: J.K. Rowling</p>
-          <p>Genre: Fantasy</p>
-          <button>Add to Cart</button>
-      </div>
-  
-      <div class="book" data-genre="Fantasy">
-          <img src="./books/17.jpg" alt="A Song of Ice and Fire">
-          <h2>A Song of Ice and Fire</h2>
-          <p>Author: George R.R. Martin</p>
-          <p>Genre: Fantasy</p>
-          <button>Add to Cart</button>
-      </div>
-  
-      <div class="book" data-genre="Fantasy">
-          <img src="./books/18.webp" alt="The Hobbit">
-          <h2>The Hobbit</h2>
-          <p>Author: J.R.R. Tolkien</p>
-          <p>Genre: Fantasy</p>
-          <button>Add to Cart</button>
-      </div>
-      
-      
-    </section>
-  </main>
-  
-  <main class="container">
-    <section class="catalog">
-      <h1>Frequently Rented Books</h1>
-      <div class="book-container">
-        <div class="book" data-genre="Non-Fiction">
-          <img src="./images/book1.jpeg" alt="Book 1">
-          <h2>Einstein</h2>
-          <p>Author: Walter Isaacson</p>
-          <p>Genre: Non-Fiction</p>
-          <button>Add to Cart</button>
-      </div>
 
-      <div class="book" data-genre="Fiction">
-          <img src="./images/book2.jpg" alt="Book 2">
-          <h2>Dust on the Mountain</h2>
-          <p>Author: Ruskin Bond</p>
-          <p>Genre: Fiction</p>
-          <button>Add to Cart</button>
+    <main>
+      <div class="cards-container container flex" id="cards-container">
+            
       </div>
+    </main>
 
-      <div class="book" data-genre="Fiction">
-          <img src="./images/book3.jpeg" alt="Book 3">
-          <h2>The Great Gatsby</h2>
-          <p>Author: F. Scott Fitzgerald</p>
-          <p>Genre: Fiction</p>
-          <button>Add to Cart</button>
-      </div>
-
-      <div class="book" data-genre="Non-Fiction">
-          <img src="./images/book4.jpg" alt="Book 4">
-          <h2>Wings of Fire</h2>
-          <p>Author: A.P.J. Abdul Kalam</p>
-          <p>Genre: Non-Fiction</p>
-          <button>Add to Cart</button>
-      </div>
-
-      <div class="book" data-genre="Fiction">
-          <img src="./images/book5.jpeg" alt="Book 5">
-          <h2>Doglapan</h2>
-          <p>Author: Ashneer Grover</p>
-          <p>Genre: Fiction</p>
-          <button>Add to Cart</button>
-      </div>
-      
-          <div class="book" data-genre="Fiction">
-              <img src="./books/book6.jpeg" alt="To Kill a Mockingbird">
-              <h2>To Kill a Mockingbird</h2>
-              <p>Author: Harper Lee</p>
-              <p>Genre: Fiction</p>
-              <button>Add to Cart</button>
-          </div>
-      
-          <div class="book" data-genre="Fiction">
-              <img src="./books/book7.jpeg" alt="1984">
-              <h2>1984</h2>
-              <p>Author: George Orwell</p>
-              <p>Genre: Fiction</p>
-              <button>Add to Cart</button>
+    <template id="template-news-card">
+      <div class="card">
+            <div class="card-header">
+                <img src="https://via.placeholder.com/400x200" alt="news-image" id="news-img">
+            </div>
+          <div class="card-content">
+              <h3 id="news-title">This is the Title</h3>
+              <h6 class="news-source" id="news-source">End Gadget 26/08/2023</h6>
+              <p class="news-desc" id="news-desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae saepe quis voluptatum quisquam vitae doloremque facilis molestias quae ratione cumque!</p>
           </div>
       </div>
-    </section>
-  </main>
+  </template>
 
-  <footer class="footer-distributed">
+    <script>
+      const API_KEY = "78dc2d84e5e74e2cb3fba4499fcd8c86";
+const url = "https://newsapi.org/v2/everything?q=";
 
-    <div class="footer-left">
+window.addEventListener("load", () => {
+    fetchNews("finance");
+    fetchNews("cryptocurrency");
+});
 
-      <img src="./images/shelfshare.png" alt="logo">
 
-      <p class="footer-links">
-        <a href="index.html" class="link-1">Home</a>
-        
-        <a href="login.html">Put on Rent</a>
-      
-        <a href="login.html ">Browse</a>
-      
-        <a href="contact.html">Contact Us</a>
-        
-        <a href="login.html">Profile</a>
-      </p>
+function reload() {
+    window.location.reload();
+}
 
-      <p class="footer-company-name">&copy; 2023 ShelfShare. All rights reserved.</p>
-    </div>
+async function fetchNews(query) {
+    const res = await fetch(`${url}${query}&sortBy=publishedAt&apiKey=${API_KEY}`);
+    const data = await res.json();
+    bindData(data.articles);
+}
 
-    <div class="footer-center">
+function bindData(articles) {
+    const cardsContainer = document.getElementById("cards-container");
+    const newsCardTemplate = document.getElementById("template-news-card");
 
-      <div>
-        <i class="fa fa-map-marker"></i>
-        <a class="map" href="https://maps.app.goo.gl/JB6KdXZ7qr82hVav6">AP Shah Institute Of Technology, Kasarvadavli, Thane</a>
-        
-      </div>
+    cardsContainer.innerHTML = "";
 
-      <div>
-        <i class="fa fa-phone"></i>
-        <p>+91 9876543210</p>
-      </div>
+    articles.forEach((article) => {
+        if (!article.urlToImage) return;
+        const cardClone = newsCardTemplate.content.cloneNode(true);
+        fillDataInCard(cardClone, article);
+        cardsContainer.appendChild(cardClone);
+    });
+}
 
-      <div>
-        <i class="fa fa-envelope"></i>
-        <p><a href="mailto:support@company.com">support@shelfshare.com</a></p>
-      </div>
-    </div>
+function fillDataInCard(cardClone, article) {
+    const newsImg = cardClone.querySelector("#news-img");
+    const newsTitle = cardClone.querySelector("#news-title");
+    const newsSource = cardClone.querySelector("#news-source");
+    const newsDesc = cardClone.querySelector("#news-desc");
 
-    <div class="footer-right">
+    newsImg.src = article.urlToImage;
+    newsTitle.innerHTML = article.title;
+    newsDesc.innerHTML = article.description;
 
-      <p class="footer-company-about">
-        <span>About Us</span>
-        Abhishek Thormothe - 169<br> Aadit Suryawanshi - 165<br>Shravani Thokade - 168
-      </p>
+    const date = new Date(article.publishedAt).toLocaleString("en-US", {
+        timeZone: "Asia/Jakarta",
+    });
 
-      
-    </div>
+    newsSource.innerHTML = `${article.source.name} · ${date}`;
 
-  </footer>
-</body>
-</html>
+    cardClone.firstElementChild.addEventListener("click", () => {
+        window.open(article.url, "_blank");
+    });
+}
+
+let curSelectedNav = null;
+function onNavItemClick(id) {
+    fetchNews(id);
+    const navItem = document.getElementById(id);
+    curSelectedNav?.classList.remove("active");
+    curSelectedNav = navItem;
+    curSelectedNav.classList.add("active");
+}
+
+const searchButton = document.getElementById("search-button");
+const searchText = document.getElementById("search-text");
+
+searchButton.addEventListener("click", () => {
+    const query = searchText.value;
+    if (!query) return;
+    fetchNews(query);
+    curSelectedNav?.classList.remove("active");
+    curSelectedNav = null;
+});
+
+async function sortNews(sortBy) {
+    try {
+        const query = searchText.value || 'finance' || 'cryptocurrency';
+        const res = await fetch(`${url}${query}&sortBy=${sortBy}&apiKey=${API_KEY}`);
+        if (!res.ok) {
+            throw new Error(`Failed to fetch news: ${res.statusText}`);
+        }
+        const data = await res.json();
+        bindData(data.articles);
+    } catch (error) {
+        console.error(error);
+        alert("Failed to fetch news. Please try again later.");
+    }
+}
+
+
+document.getElementById("sort-by-date").addEventListener("click", () => {
+    sortNews('publishedAt');
+});
+
+document.getElementById("sort-by-popularity").addEventListener("click", () => {
+    sortNews('popularity');
+});
+
+document.getElementById("sort-by-relevancy").addEventListener("click", () => {
+    sortNews('relevancy');
+});
+
+    </script>
+
+
+    
+
+
+ </body>
+ </html>
